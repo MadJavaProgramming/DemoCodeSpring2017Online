@@ -1,0 +1,3 @@
+Goal: write program that will display a message on the screen
+Class Name: FirstClassDemo
+Class Method/s: Main method which writes out a message

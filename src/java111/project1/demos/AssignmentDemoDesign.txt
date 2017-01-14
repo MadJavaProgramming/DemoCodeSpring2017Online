@@ -1,0 +1,5 @@
+Goal: write a program that will assign values to variables
+       and display those values to the screen
+Class: AssignmentDemo
+Method/s: main will be responsible for creating the variables,
+        assigning values, and displaying the variables.

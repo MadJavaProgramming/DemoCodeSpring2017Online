@@ -1,0 +1,4 @@
+Goal: write a program that will demonstrate using if and else
+Class: IfElseDemo
+Method/s: main will be responsible for creating the variables,
+        assigning values, and using if/else logic to display messages.
