@@ -1,0 +1,4 @@
+Goal: write a program that will demonstrate using while
+Class: WhileDemo
+Method/s: main will be responsible for creating the variables,
+        assigning values, and Iterate/loop.
