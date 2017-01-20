@@ -1,0 +1,13 @@
+Goal: Is to create a class that represent a restaurant, 
+      perhaps in a system like Yelp or Trip Advisor
+      
+      ClassName: Restaurant
+      
+      Instance Variables (attributes)
+            name
+            type
+            rating
+            
+      Methods (what can the class do)
+            display the restaurant -write out the name, 
+                type and rating
