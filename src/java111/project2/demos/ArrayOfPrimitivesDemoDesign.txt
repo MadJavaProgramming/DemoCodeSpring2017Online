@@ -1,0 +1,12 @@
+Goal: Demonstrate an array of doubles
+
+class name: ArrayOfPrimitivesDemo
+
+main: create an array of doubles, add a few doubles to the array, 
+        display each element in the array
+        
+
+index   value
+  0     88.99
+  1     30.00
+  2     .99

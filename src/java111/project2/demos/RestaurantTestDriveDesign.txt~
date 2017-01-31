@@ -3,7 +3,7 @@ Goal: Create a restaurant object and display it
 Name: RestaurantTestDrive
 
 Method: main method 
-        1) to instantiate (create) a Restaurant object,
+        1) to instantiate (create) a few Restaurant objects,
         2) set the instance variables (set the name, type, and the rating)
         3) display the restaurant.
 

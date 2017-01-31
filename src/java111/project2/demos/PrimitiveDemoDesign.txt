@@ -1,0 +1,6 @@
+Goal: to demonstrate several of the primitive variable types
+
+Class Name: PrimitiveDemo
+
+Method: main: will create several primitive variables, assign values, 
+        and display those values.

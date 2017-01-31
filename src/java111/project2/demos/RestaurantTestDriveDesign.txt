@@ -1,0 +1,15 @@
+Goal: Create restaurant objects and display them
+
+Name: RestaurantTestDrive
+
+Method: main method 
+        1) to instantiate (create) a few Restaurant objects,
+        2) set the instance variables (set the name, type, and the rating)
+        3) display the restaurants in a loop
+
+restaurants array looks something like
+
+index           Restaurant
+  0                 restaurant 1
+  1                 restaurant 2
+  2                 restaurant 3

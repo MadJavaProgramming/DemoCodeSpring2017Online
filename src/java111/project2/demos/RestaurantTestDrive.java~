@@ -1,0 +1,81 @@
+/** Class to run our restaurant program
+ * @author pwaite
+ */
+ 
+public class RestaurantTestDrive {
+ 
+ /** runs the restaurant program, creates restaurants and
+  *  displays them 
+  *  @param args command line arguments
+  */
+  
+    public static void main(String[] args) {
+        // instantiate/creating 3 restaurant objects and assign them to 
+        // three variables
+        Restaurant restaurant1 = new Restaurant();
+        Restaurant restaurant2 = new Restaurant();
+        Restaurant restaurant3 = new Restaurant();
+        
+      
+        // set the name, type, and rating for each restaurant
+        restaurant1.name = "Muramotos";
+        restaurant1.type = "Japenese";
+        restaurant1.rating = 5;
+        
+        restaurant2.name = "BlackIron Grill";
+        restaurant2.type = "American";
+        restaurant2.rating = 4;
+        
+        restaurant3.name = "McDonalds";
+        restaurant3.type = "Fast Food";
+        restaurant3.rating = 3;
+      
+        // display the restaurants
+        restaurant1.display();
+        System.out.println();
+        restaurant2.display();
+        System.out.println();
+        restaurant3.display();
+        System.out.println();
+        
+        // set restaurant1 = restaurant2
+        // => both variables will point to the same object
+         
+        restaurant1 = restaurant2;
+        
+        // display the restaurants
+        System.out.println("After setting restaurant1 = restaurant2;");
+        restaurant1.display();
+        System.out.println();
+        restaurant2.display();
+        System.out.println();
+        restaurant3.display();
+        System.out.println();
+        
+        // Change the rating on restaurant2
+      
+         
+        restaurant2.rating = 2;
+        
+        // display the restaurants
+        System.out.println("After setting restaurant2.rating = 2;");
+        restaurant1.display();
+        System.out.println();
+        restaurant2.display();
+        System.out.println();
+        restaurant3.display();
+        System.out.println();
+        
+        restaurant3 = null;
+        
+        // display the restaurants
+        System.out.println("After setting restaurant3 = null;");
+        restaurant1.display();
+        System.out.println();
+        restaurant2.display();
+        System.out.println();
+        restaurant3.display();
+        System.out.println();
+    }
+ 
+}
