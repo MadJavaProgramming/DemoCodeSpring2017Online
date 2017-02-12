@@ -1,0 +1,10 @@
+Goal: create a class responsible for creating restaurants
+
+Class name: RestaurantProcessor
+
+instance variable: Array of restaurants
+
+methods:
+    run() - method will call create and display, instantiate the array
+    create restaurants
+    display restaurants

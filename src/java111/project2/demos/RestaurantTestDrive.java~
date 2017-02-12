@@ -23,17 +23,17 @@ public class RestaurantTestDrive {
         
       
         // set the name, type, and rating for each restaurant
-        restaurants[0].name = "Muramotos";
-        restaurants[0].type = "Japenese";
-        restaurants[0].rating = 5;
+        restaurants[0].setName("Muramotos");
+        restaurants[0].setType("Japenese");
+        restaurants[0].setRating(5);
         
-        restaurants[1].name = "BlackIron Grill";
-        restaurants[1].type = "American";
-        restaurants[1].rating = 4;
+        restaurants[1].setName("BlackIron Grill");
+        restaurants[1].setType("American");
+        restaurants[1].setRating(4);
         
-        restaurants[2].name = "McDonalds";
-        restaurants[2].type = "Fast Food";
-        restaurants[2].rating = 3;
+        restaurants[2].setName("McDonalds");
+        restaurants[2].setType("Fast Food");
+        restaurants[2].setRating(3);
       
         // loop over the array and display each restaurant
         while (counter < restaurants.length) {
