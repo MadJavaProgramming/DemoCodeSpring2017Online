@@ -1,0 +1,15 @@
+/** Test code for the InvoiceItem from project 2 
+ * 
+ *  @author pwaite
+**/
+public class InvoiceItemTest {
+
+    /** test the invoice item calculation 
+     *  @param args command line arguments
+    **/
+    public static void main(String[] args) {
+    
+    }
+    
+}
+

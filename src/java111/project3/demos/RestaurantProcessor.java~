@@ -19,7 +19,7 @@ public class RestaurantProcessor {
        // restaurants = new Restaurant[3];
        
        // instantiate the arraylist 
-       restaurants = new ArrayList<Restaurant>();
+       restaurants = new ArrayList<>();
         
         // call create method
         createRestaurants();
@@ -39,7 +39,7 @@ public class RestaurantProcessor {
         
         // instantiate 3 restaurant objects and add then to the arraylist
         
-        MenuItem[] newMenu = createMenuItems();
+        ArrayList<MenuItem> newMenu = createMenuItems();
         
         Restaurant restaurant1 = new Restaurant();
         Restaurant restaurant2 = new Restaurant();
@@ -72,17 +72,22 @@ public class RestaurantProcessor {
      
      /** create menu items
      */
-     public MenuItem[] createMenuItems() {
+     public ArrayList<MenuItem> createMenuItems() {
         // instantiate an array and add menu items to it.
-        MenuItem[] menu = new MenuItem[3];
+        ArrayList<MenuItem> menu = new ArrayList<MenuItem>();
         
-        menu[0] = new MenuItem();
-        menu[1] = new MenuItem();
-        menu[2] = new MenuItem();
+        MenuItem menuItem1 = new MenuItem();
+        MenuItem menuItem2 = new MenuItem();
+        MenuItem menuItem3 = new MenuItem();
         
-        menu[0].setName("Burger");
-        menu[1].setName("Chocolate Shake");
-        menu[2].setName("Fries");
+        menuItem1.setName("Burger");
+        menuItem2.setName("Chocolate Shake");
+        menuItem3.setName("Fries");
+        
+        menu.add(menuItem1);
+        menu.add(menuItem2);
+        menu.add(menuItem3);
+        
         return menu;
      }   
         
@@ -91,12 +96,14 @@ public class RestaurantProcessor {
      /** iterate over the array calling the display method on each restaurant
        */
        public void displayRestaurants() {
-           int counter = 0;
+           
            // loop over the arraylist and display each restaurant using the enhanced for loop
            
            for (Restaurant restaurant : restaurants) {
                restaurant.display();
            }
+           
+          
        }
  
 }

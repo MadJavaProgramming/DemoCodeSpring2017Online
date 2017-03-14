@@ -19,7 +19,7 @@ public class RestaurantProcessor {
        // restaurants = new Restaurant[3];
        
        // instantiate the arraylist 
-       restaurants = new ArrayList<Restaurant>();
+       restaurants = new ArrayList<>();
         
         // call create method
         createRestaurants();
@@ -96,12 +96,18 @@ public class RestaurantProcessor {
      /** iterate over the array calling the display method on each restaurant
        */
        public void displayRestaurants() {
-           int counter = 0;
+           
            // loop over the arraylist and display each restaurant using the enhanced for loop
            
            for (Restaurant restaurant : restaurants) {
                restaurant.display();
            }
+           
+           /*for (int counter = 0; counter < restaurants.size(); counter++) {
+                Restaurant restaurant = restaurants.get(counter);
+                restaurant.display();
+           }*/
+          
        }
  
 }

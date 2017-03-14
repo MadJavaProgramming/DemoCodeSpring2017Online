@@ -1,3 +1,5 @@
+import java.util.*;
+
 /** Represents a restaurant in a Yelp-like system
  *
  *  @author pwaite
@@ -7,24 +9,41 @@ public class Restaurant {
     private String name;
     private String type;
     private int rating;
-    private MenuItem[] menu;
-	/**
-	 * Returns the value of menu.
+    private ArrayList<MenuItem> menu;
+
+	/**
+
+	 * Returns the value of menu.
+
 	 * @return the array of menu items
-	 */
-	public MenuItem[] getMenu() {
-		return menu;
-	}
-
-
-	/**
-	 * Sets the value of menu.
-	 * @param menu The value to assign menu.
-	 */
-	public void setMenu(MenuItem[] menu) {
-		this.menu = menu;
-	}
-
+	 */
+
+	public ArrayList<MenuItem> getMenu() {
+
+		return menu;
+
+	}
+
+
+
+
+
+	/**
+
+	 * Sets the value of menu.
+
+	 * @param menu The value to assign menu.
+
+	 */
+
+	public void setMenu(ArrayList<MenuItem> menu) {
+
+		this.menu = menu;
+
+	}
+
+
+
 	
  
 
@@ -119,8 +138,8 @@ public class Restaurant {
        public String displayMenu() {
            int counter = 0;
            String menuString  = "";
-           while (counter < menu.length) {
-                menuString = menuString + menu[counter].getName() + " ";  
+           for (MenuItem item : menu){
+                menuString = menuString + item.getName() + " ";  
                 counter++;
            }
            return menuString;

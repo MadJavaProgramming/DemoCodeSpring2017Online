@@ -1,0 +1,18 @@
+TestCode a.k.a Unit Test
+Project 2 - The Invoice application
+
+Testing the invoice item
+
+goal: verify the calculation of the total for a line item = quantity * price
+    verify means compare the actual value returned by the method to the expected value
+
+1. create invoice item
+2. assign quantity and price
+3. create variable for the actual value returned by the calculate method
+4. create a variable for the expected value, and assign the expected value
+5. Call the method to be tested and assign the result to the actual value variable
+6. Compare the actual value to the expected value and display a message of success or fail
+
+Repeat this for all condition
+
+
