@@ -1,0 +1,6 @@
+Restaurant - superclass
+
+Subclasses:
+Fine dining - liquor license, reservation
+Fast food 
+Food cart - mobile location

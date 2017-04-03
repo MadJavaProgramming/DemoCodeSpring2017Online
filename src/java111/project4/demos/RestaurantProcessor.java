@@ -57,8 +57,8 @@ public class RestaurantProcessor {
         restaurant2.setRating(4);
         restaurant2.setMenu(newMenu);
         
-        restaurant3.setName("Empanada Place");
-        restaurant3.setType("Costa Rican");
+        restaurant3.setName("Caracas");
+        restaurant3.setType("Venezuelan");
         restaurant3.setRating(5);
         restaurant3.setMenu(newMenu);
         restaurant3.setMobileLocation("Square");

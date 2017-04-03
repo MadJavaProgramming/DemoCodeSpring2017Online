@@ -43,7 +43,7 @@ public class RestaurantProcessor {
         
         Restaurant restaurant1 = new Restaurant();
         Restaurant restaurant2 = new Restaurant();
-        Restaurant restaurant3 = new Restaurant();
+        Restaurant restaurant3 = new FoodCart();
         
         
         // set the name, type, and rating for each restaurant
@@ -57,10 +57,11 @@ public class RestaurantProcessor {
         restaurant2.setRating(4);
         restaurant2.setMenu(newMenu);
         
-        restaurant3.setName("McDonalds");
-        restaurant3.setType("Fast Food");
-        restaurant3.setRating(3);
+        restaurant3.setName("Caracas");
+        restaurant3.setType("Venezuelan");
+        restaurant3.setRating(5);
         restaurant3.setMenu(newMenu);
+        //restaurant3.setMobileLocation("Square");
 
         // add the restaurants to the array
         
@@ -101,6 +102,7 @@ public class RestaurantProcessor {
            
            for (Restaurant restaurant : restaurants) {
                restaurant.display();
+               System.out.println();
            }
            
            /*for (int counter = 0; counter < restaurants.size(); counter++) {
