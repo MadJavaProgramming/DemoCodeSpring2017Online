@@ -41,8 +41,8 @@ public class RestaurantProcessor {
         
         ArrayList<MenuItem> newMenu = createMenuItems();
         
-        Restaurant restaurant1 = new Restaurant();
-        Restaurant restaurant2 = new Restaurant();
+        Restaurant restaurant1 = new FoodCart();
+        Restaurant restaurant2 = new FoodCart();
         FoodCart restaurant3 = new FoodCart();
         
         
@@ -57,8 +57,8 @@ public class RestaurantProcessor {
         restaurant2.setRating(4);
         restaurant2.setMenu(newMenu);
         
-        restaurant3.setName("Empanada Place");
-        restaurant3.setType("Costa Rican");
+        restaurant3.setName("Caracas");
+        restaurant3.setType("Venezuelan");
         restaurant3.setRating(5);
         restaurant3.setMenu(newMenu);
         restaurant3.setMobileLocation("Square");

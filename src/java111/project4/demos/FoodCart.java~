@@ -20,6 +20,10 @@
 
 	}
 
+
+
+
+
 	/**
 
 	 * Sets the value of mobileLocation.
@@ -46,14 +50,14 @@
         }
         return menuString;
      }
-     
-     
 
-	/** Returns a string representing a FoodCart
-	  * @return the string representation of FoodCart.
+
+	/** displays the name, type and rating for the restaurant
       */
-    public String toString() {
-        return super.toString() + "Today the food cart is at: " +  mobileLocation;
+    public void display() {
+        super.display();
+        System.out.println("Today the food cart is at: " +  mobileLocation);
+        System.out.println();
      } 
  
  }

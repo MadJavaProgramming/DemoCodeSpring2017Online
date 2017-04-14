@@ -5,7 +5,7 @@ import java.util.*;
  *  @author pwaite
  */
  
-public abstract class Restaurant implements Rateable {
+public abstract class Restaurant {
     private String name;
     private String type; // food type
     private int rating;
@@ -87,10 +87,10 @@ public abstract class Restaurant implements Rateable {
 
     /** displays the name, type and rating for the restaurant
       */
-    public String toString() {
-        return super.toString() + "The restaurant " + name + " " + 
-                "serves " + type + " food " +
-                "and is rated " + rating + " star/s " +
-                "The menu consists of: " + displayMenu();
+    public void display() {
+        System.out.print("The restaurant " + name + " " );
+        System.out.print("serves " + type + " food ");
+        System.out.println("and is rated " + rating + " star/s ");
+        System.out.println("The menu consists of: " + displayMenu());
      } 
 }

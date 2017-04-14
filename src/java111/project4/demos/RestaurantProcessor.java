@@ -38,24 +38,26 @@ public class RestaurantProcessor {
         restaurants[2] = new Restaurant();*/
         
         // instantiate 3 restaurant objects and add then to the arraylist
-        
         ArrayList<MenuItem> newMenu = createMenuItems();
         
-        Restaurant restaurant1 = new Restaurant();
-        Restaurant restaurant2 = new Restaurant();
+        FineDining restaurant1 = new FineDining();
+        FastFood restaurant2 = new FastFood();
         FoodCart restaurant3 = new FoodCart();
         
-        
+      
         // set the name, type, and rating for each restaurant
         restaurant1.setName("Muramotos");
         restaurant1.setType("Japenese");
         restaurant1.setRating(5);
         restaurant1.setMenu(newMenu);
+        restaurant1.setAcceptsReservations(true);
         
-        restaurant2.setName("BlackIron Grill");
+        
+        restaurant2.setName("McDonalds");
         restaurant2.setType("American");
         restaurant2.setRating(4);
         restaurant2.setMenu(newMenu);
+        restaurant2.setKidsPlayArea(true);
         
         restaurant3.setName("Caracas");
         restaurant3.setType("Venezuelan");
@@ -101,14 +103,16 @@ public class RestaurantProcessor {
            // loop over the arraylist and display each restaurant using the enhanced for loop
            
            for (Restaurant restaurant : restaurants) {
-               restaurant.display();
+               System.out.println(restaurant.toString());
                System.out.println();
            }
+          
+           //search for only businesses rated 5 
+           for (Rateable rateableBusiness : restaurants) {
+               if (rateableBusiness.getRating() >= 5)
+                   System.out.println(rateableBusiness);
+           }
            
-           /*for (int counter = 0; counter < restaurants.size(); counter++) {
-                Restaurant restaurant = restaurants.get(counter);
-                restaurant.display();
-           }*/
           
        }
  

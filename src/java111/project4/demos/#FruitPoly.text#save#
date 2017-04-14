@@ -1,0 +1,6 @@
+Fruit apple = new Apple();
+Apple apple2 = new Apple();
+Fruit GoldenDelicious = new GoldenDelicious();
+
+apple. <= only methods on Fruit are available
+apple2 <= methods on Apple and Fruit are available
