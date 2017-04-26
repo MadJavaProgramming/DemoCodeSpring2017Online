@@ -5,6 +5,20 @@ package java111.project5.demos;
  */
 
  public class FastFood extends Restaurant {
+    /** Constructor for a FastFood Restaurant
+     */
+    public FastFood(){
+        System.out.println("In the FastFood constructor");
+    }
+    /** Constructor for a FastFood Restaurant that accepts a parameter for whether
+     * the restaurant has a kids play area
+     * @param kidsPlayArea indicates whether there is a kids play area
+     */
+    public FastFood(boolean kidsPlayArea) {
+        this();
+        this.kidsPlayArea = kidsPlayArea;
+         System.out.println("In the FastFood constructor setting the kidsPlayArea");
+    }
  
      private boolean kidsPlayArea;
 

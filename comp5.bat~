@@ -1,0 +1,2 @@
+javac -classpath classes -d classes src/java111/project5/demos/*.java %1 %2 %3
+

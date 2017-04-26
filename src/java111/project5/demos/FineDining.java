@@ -7,6 +7,10 @@ package java111.project5.demos;
  public class FineDining extends Restaurant {
  
      private boolean acceptsReservations;
+     
+     public FineDining(){
+        System.out.println("In the FineDining constructor");
+    }
 
 	/**
 

@@ -21,7 +21,7 @@ public class RestaurantProcessor {
        // restaurants = new Restaurant[3];
        
        // instantiate the arraylist 
-       restaurants = new ArrayList<>();
+       restaurants = new ArrayList<>();// commented out to demo NPE
         
         // call create method
         createRestaurants();
@@ -33,6 +33,8 @@ public class RestaurantProcessor {
     /** create restaurants and put them in the restaurants array
      */
      public void createRestaurants() {
+         
+        
         // instantiate/creating 3 restaurant objects and assign 
         // each restaurant to an index/slot in the array
         /*restaurants[0] = new Restaurant();
@@ -42,11 +44,18 @@ public class RestaurantProcessor {
         // instantiate 3 restaurant objects and add then to the arraylist
         ArrayList<MenuItem> newMenu = createMenuItems();
         
+        System.out.println("There are " + Restaurant.count + " restaurant(s) in my system");
+        //System.out.println("Just before the FineDining constructor is called");
         FineDining restaurant1 = new FineDining();
-        FastFood restaurant2 = new FastFood();
+        System.out.println("After creating the first restaurant: " + restaurant1.count);
+        //System.out.println("Just after the FineDining constructor was called");
+        FastFood restaurant2 = new FastFood(true);
+         System.out.println("After creating the second restaurant: " + restaurant2.count);
         FoodCart restaurant3 = new FoodCart();
+         System.out.println("After creating the third restaurant: " + restaurant3.count);
+         System.out.println("After creating the first restaurant: " + restaurant1.count);
         
-      
+        System.out.println("There are " + Restaurant.count + " restaurant(s) in my system");
         // set the name, type, and rating for each restaurant
         restaurant1.setName("Muramotos");
         restaurant1.setType("Japenese");
@@ -59,7 +68,7 @@ public class RestaurantProcessor {
         restaurant2.setType("American");
         restaurant2.setRating(4);
         restaurant2.setMenu(newMenu);
-        restaurant2.setKidsPlayArea(true);
+        //restaurant2.setKidsPlayArea(true);
         
         restaurant3.setName("Caracas");
         restaurant3.setType("Venezuelan");
@@ -103,6 +112,7 @@ public class RestaurantProcessor {
        */
        public void displayRestaurants() {
            
+          
            // loop over the arraylist and display each restaurant using the enhanced for loop
            
            for (Restaurant restaurant : restaurants) {

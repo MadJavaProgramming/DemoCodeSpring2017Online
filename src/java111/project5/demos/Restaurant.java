@@ -12,6 +12,12 @@ public abstract class Restaurant implements Rateable {
     private String type; // food type
     private int rating;
     private ArrayList<MenuItem> menu;
+    public static int count;
+    
+    public Restaurant(){
+        System.out.println("In the restaurant constructor");
+        count++;
+    }
 
 	/**
 	 * Returns the value of menu.

@@ -1,3 +1,5 @@
+package java111.project5.demos;
+
 import java.util.*;
 
 /** Represents a restaurant in a Yelp-like system
@@ -10,6 +12,10 @@ public abstract class Restaurant implements Rateable {
     private String type; // food type
     private int rating;
     private ArrayList<MenuItem> menu;
+    
+    public Restaurant(){
+        System.out.println("In the restaurant constructor");
+    }
 
 	/**
 	 * Returns the value of menu.

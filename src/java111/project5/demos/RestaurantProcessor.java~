@@ -1,3 +1,5 @@
+package java111.project5.demos;
+
 import java.util.*;
 
 /** Class to create restaurants
@@ -19,7 +21,7 @@ public class RestaurantProcessor {
        // restaurants = new Restaurant[3];
        
        // instantiate the arraylist 
-       restaurants = new ArrayList<>();
+       restaurants = new ArrayList<>();// commented out to demo NPE
         
         // call create method
         createRestaurants();
@@ -31,6 +33,8 @@ public class RestaurantProcessor {
     /** create restaurants and put them in the restaurants array
      */
      public void createRestaurants() {
+         
+        
         // instantiate/creating 3 restaurant objects and assign 
         // each restaurant to an index/slot in the array
         /*restaurants[0] = new Restaurant();
@@ -40,8 +44,10 @@ public class RestaurantProcessor {
         // instantiate 3 restaurant objects and add then to the arraylist
         ArrayList<MenuItem> newMenu = createMenuItems();
         
+        //System.out.println("Just before the FineDining constructor is called");
         FineDining restaurant1 = new FineDining();
-        FastFood restaurant2 = new FastFood();
+        //System.out.println("Just after the FineDining constructor was called");
+        FastFood restaurant2 = new FastFood(true);
         FoodCart restaurant3 = new FoodCart();
         
       
@@ -57,7 +63,7 @@ public class RestaurantProcessor {
         restaurant2.setType("American");
         restaurant2.setRating(4);
         restaurant2.setMenu(newMenu);
-        restaurant2.setKidsPlayArea(true);
+        //restaurant2.setKidsPlayArea(true);
         
         restaurant3.setName("Caracas");
         restaurant3.setType("Venezuelan");
@@ -74,6 +80,7 @@ public class RestaurantProcessor {
      }
      
      /** create menu items
+      * @return The list of menu items
      */
      public ArrayList<MenuItem> createMenuItems() {
         // instantiate an array and add menu items to it.
@@ -100,6 +107,7 @@ public class RestaurantProcessor {
        */
        public void displayRestaurants() {
            
+          
            // loop over the arraylist and display each restaurant using the enhanced for loop
            
            for (Restaurant restaurant : restaurants) {

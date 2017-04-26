@@ -8,6 +8,10 @@ package java111.project5.demos;
  public class FoodCart extends Restaurant {
  
      private String mobileLocation;
+     
+     public FoodCart(){
+        System.out.println("In the FoodCart constructor");
+    }
 
 	/**
 
